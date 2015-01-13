@@ -163,8 +163,9 @@ L.extend(L.Argo, {
       condition = L.Argo.t(rules[i].condition, properties);
 
       if (eval(condition)) {
-        // Replace the property key-values with the values outlined the config
-        // The new property values are usually added for Leaflet compatibility
+        console.log("shapeType:");
+        console.log(properties['shapeType']);
+        // The new property values (outlined in the config) are added for Leaflet compatibility
         for (var key in rules[i].style) {
           if (rules[i].style.hasOwnProperty(key)) {
             if (typeof rules[i].style[key] == 'string' || rules[i].style[key] instanceof String) {
