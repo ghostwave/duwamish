@@ -45,6 +45,8 @@ git, and Github will be useful but is not required.
 
 Click the button [on the homepage of this repo](https://github.com/openplans/shareabouts/#heroku-button).
 
+If you get a timeout message around compiling the multi-pack, try running the process again. 
+
 ### Configure App Name and Region 
 After clicking the button, you'll be taken to a configuration screen on Heroku, listing out the settings
 that your Shareabouts map will be deployed with.
@@ -73,7 +75,7 @@ Click _View it_ to see your map. Congratulations!
 Before going any further with setting up your map, log into the API server and
 change the default admin password.
 
-Your API server is accessible at _app-name_.herokuapp.com/admin
+Your API server is accessible at _app-name_.herokuapp.com/admin/ (you need the trailing slash).
 
 User name is _admin_.
 
