@@ -19,7 +19,7 @@ RUN apt-get update
 RUN apt-get install -y tar git curl wget dialog net-tools build-essential
 
 # Install Python and Basic Python Tools
-RUN apt-get install -y python python-dev python-distribute python-pip
+RUN apt-get install -y python postgresql postgresql-dev python-dev python-distribute python-pip
 
 # If you want to deploy from an online host git repository, you can use the following command to clone:
 RUN git clone https://github.com/smartercleanup/duwamish.git && cd duwamish && git checkout docker-deploy-dev && cd -
